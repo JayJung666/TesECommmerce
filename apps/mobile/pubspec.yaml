@@ -1,0 +1,120 @@
+name: atlantis_shop
+description: A production-ready Flutter e-commerce application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Routing
+  go_router: ^12.1.1
+  
+  # HTTP & Networking
+  dio: ^5.3.2
+  
+  # JSON & Code Generation
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_messaging: ^14.7.10
+  firebase_analytics: ^10.7.4
+  firebase_crashlytics: ^3.4.9
+  
+  # Google Sign In
+  google_sign_in: ^6.1.6
+  
+  # UI & Images
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  carousel_slider: ^4.2.1
+  
+  # Localization & Formatting
+  intl: ^0.18.1
+  
+  # Utils
+  equatable: ^2.0.5
+  logger: ^2.0.2+1
+  connectivity_plus: ^5.0.1
+  
+  # Local Packages
+  atlantis_core:
+    path: ../../packages/core
+  atlantis_data:
+    path: ../../packages/data
+  atlantis_domain:
+    path: ../../packages/domain
+  atlantis_auth:
+    path: ../../packages/features/auth
+  atlantis_catalog:
+    path: ../../packages/features/catalog
+  atlantis_product_detail:
+    path: ../../packages/features/product_detail
+  atlantis_cart:
+    path: ../../packages/features/cart
+  atlantis_checkout:
+    path: ../../packages/features/checkout
+  atlantis_orders:
+    path: ../../packages/features/orders
+  atlantis_profile:
+    path: ../../packages/features/profile
+  atlantis_wishlist:
+    path: ../../packages/features/wishlist
+  atlantis_search:
+    path: ../../packages/features/search
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  
+  # Testing
+  mocktail: ^1.0.1
+  
+  # Linting
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
